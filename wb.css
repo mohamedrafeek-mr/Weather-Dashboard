@@ -140,3 +140,16 @@ footer {
   color: white;
   font-family: sans-serif;
 }
+
+@media (max-width: 480px) {
+  main ul {
+    grid-template-columns: 1fr; 
+    justify-items: center; 
+  }
+
+  main li {
+    width: 80%; 
+    text-align: center;
+  }
+}
+
