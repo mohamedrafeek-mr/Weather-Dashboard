@@ -1,0 +1,139 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   background: url(./lake_evening_trees_silence_reflection_on_water_dark_wallpaper_background_4k_hd_dark_background.jpg)no-repeat center center / cover;
+}
+main{
+    width: 300px;
+    height: max-content;
+    min-height: 300px;
+    border-radius: 30px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+  border: 3px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(10px);
+    padding: 30px;
+    box-sizing: border-box;
+}
+main form{
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+}
+main form input,
+button{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    padding: 10px;
+}
+main form i{
+    opacity: 0.7;
+}
+main .result{
+    padding: 20px;
+    text-align: center;
+}
+main form input{
+    color: white;
+}
+main .result .name{
+    font-weight: bold;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.temper img{
+    width: 150px;
+    filter: drop-shadow(0 10px 50px black);
+}
+figcaption{
+    font-size: 2em;
+    overflow-x: hidden;
+    color: rgba(227, 219, 219, 0.879);
+}
+.description{
+    padding: 10px 0 30px;
+}
+main ul{
+    list-style: none;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr) ;
+    gap: 10px;
+    margin-left: -10px;
+}
+
+main li{
+    border:2px solid orange;
+    color: white;
+    border-radius: 10px;
+    padding: 20px 10px;
+    background-image: linear-gradient(
+        to bottom,
+        transparent 50%,
+        rgba(255, 255, 255, 0.158) 50%
+    );
+font-weight: bold;
+font-size: small;
+width: 70px;
+}
+main li i{
+    font-size: 2em;
+    margin: 20px 0 20px;
+    display: block;
+}
+main li:nth-child(2){
+    background-color: rgba(227, 222, 222, 0.667);
+    color: black;
+    border: 2px solid white;
+}main li:nth-child(3){
+    border: 2px solid rgba(7, 112, 14, 0.559);
+}
+main.error{
+    animation: erroreffect 0.3s linear 1;
+}
+@keyframes erroreffect{
+    0%{
+transform: translate(10px,5px);
+    }
+    25%{
+transform: translate(-5px,0);
+    }
+    50%{
+transform: translate(8px,2px);
+    }75%{
+transform: translate(2px,5px);
+    }
+    100%{
+  transform: translate();      
+    }
+}
+.er {
+  color: #15bbdce4;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.er:hover {
+  text-shadow: 0 0 5px #0c86d8, 0 0 10px #07e2ff, 0 0 20px #07e6ff,
+    0 0 40px #0762ff, 0 0 80px #079cff;
+}
+footer {
+  margin-top: auto;
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+}
