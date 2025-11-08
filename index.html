@@ -8,8 +8,8 @@
     <link rel="shortcut icon" href="https://f-droid.org/repo/org.thosp.yourlocalweather/en-GB/icon_MDOwAe8lWtZFZoy1TzN-d8U-luyz9qiV9VtCU30_Z_0=.png" type="image/x-icon">
     <title>Weather Dashboard</title>
 </head>
-<body>
-    <header><br>
+<body><br>
+    <header>
     <main>
         <form action="">
             <input type="text" autocomplete="off" id="valuesearch">
@@ -30,24 +30,25 @@
             <p class="description">
                 Overcast cloud
             </p>
+            </section>
             <ul>
                 <li>
                     <span>Cloud</span>
                     <i class="fa-solid fa-cloud"></i>
-                    <span id="cloud">98</span>%
+                   <span class="unit"> <span id="cloud">98</span>%</span>
                 </li>
                 <li>
                     <span>Humidity</span>
-                    <i class="fa-solid fa-droplet"></i><br>
-                    <span id="humidity">55</span>%
+                    <i class="fa-solid fa-droplet"></i>
+                   <span class="unit"> <span id="humidity">55</span>%</span></span>
                 </li>
                 <li>
                     <span>Pressure</span>
                     <i class="fa-solid fa-gauge"></i>
-                    <span id="pressure">1001</span>hPa
+                    <span class="unit"><span id="pressure">1001</span>hPa</span>
                 </li>
             </ul>
-        </section>
+        
     </main>
     <script src="wb.js"></script>
     </header>
