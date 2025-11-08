@@ -13,7 +13,7 @@ body{
    background: url(./lake_evening_trees_silence_reflection_on_water_dark_wallpaper_background_4k_hd_dark_background.jpg)no-repeat center center / cover;
 }
 main{
-    width: 300px;
+    width: auto;
     height: max-content;
     min-height: 300px;
     border-radius: 30px;
@@ -60,47 +60,52 @@ main .result .name{
 }
 figcaption{
     font-size: 2em;
-    overflow-x: hidden;
+    overflow-x: visible;
     color: rgba(227, 219, 219, 0.879);
 }
 .description{
     padding: 10px 0 30px;
 }
-main ul{
-    list-style: none;
-    display:grid;
-    grid-template-columns:repeat(3, 1fr) ;
-    gap: 10px;
-    margin-left: -10px;
+main ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  text-align: center;
+  justify-content: center;
 }
 
-main li{
-    border:2px solid orange;
-    color: white;
-    border-radius: 10px;
-    padding: 20px 10px;
-    background-image: linear-gradient(
-        to bottom,
-        transparent 50%,
-        rgba(255, 255, 255, 0.158) 50%
-    );
-font-weight: bold;
-font-size: small;
-width: auto;
+main li {
+  border: 2px solid orange;
+  color: white;
+  border-radius: 15px;
+  padding: 15px;
+  background-image: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgba(255, 255, 255, 0.158) 50%
+  );
+  font-weight: bold;
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers vertically */
+  align-items: center;     /* Centers horizontally */
 }
-main li i{
-    font-size: 2em;
-    margin: 20px 0 20px;
-    display: block;
+
+main li i {
+  font-size: 2em;
+  margin: 10px 0;
+  display: block;
 }
-main li:nth-child(1){
-    width: 65px;
+
+main li:nth-child(2) {
+  background-color: rgba(227, 222, 222, 0.667);
+  color: black;
+  border: 2px solid white;
 }
-main li:nth-child(2){
-    background-color: rgba(227, 222, 222, 0.667);
-    color: black;
-    border: 2px solid white;
-}main li:nth-child(3){
+
+main li:nth-child(3){
     border: 2px solid rgba(7, 112, 14, 0.559);
 }
 main.error{
@@ -140,16 +145,3 @@ footer {
   color: white;
   font-family: sans-serif;
 }
-
-@media (max-width: 480px) {
-  main ul {
-    grid-template-columns: 1fr; 
-    justify-items: center; 
-  }
-
-  main li {
-    width: 80%; 
-    text-align: center;
-  }
-}
-
