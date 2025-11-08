@@ -86,12 +86,15 @@ main li{
     );
 font-weight: bold;
 font-size: small;
-width: 70px;
+width: auto;
 }
 main li i{
     font-size: 2em;
     margin: 20px 0 20px;
     display: block;
+}
+main li:nth-child(1){
+    width: 65px;
 }
 main li:nth-child(2){
     background-color: rgba(227, 222, 222, 0.667);
